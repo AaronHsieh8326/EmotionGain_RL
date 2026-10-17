@@ -1,0 +1,62 @@
+# Local configuration
+.env
+.env.*
+!.env.example
+config.yaml
+
+# Model files
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Datasets
+data/raw/
+data/processed/
+data/private/
+*.jsonl
+*.parquet
+*.npy
+*.npz
+
+# Human evaluation
+*response*.xlsx
+*response*.csv
+*answer_key*
+*rater_assignment*
+*form_link*
+questionnaire_app/
+generated_questionnaire/
+human_evaluation_results/
+
+# Training logs
+logs/
+results/
+training_runs/
+diagnostic_logs/
+*.log
+
+# Development caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+*.tmp
+*.bak
+
+# Documents and videos
+*.pdf
+*.pptx
+*.docx
+*.mp4
